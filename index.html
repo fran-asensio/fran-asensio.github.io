@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Asensio | Full Stack Developer</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/portfolio.js" defer></script>
+</head>
+<body>
+
+    <!-- Fondo de partículas -->
+    <canvas id="lienzo-fondo"></canvas>
+
+    <!-- Navegación -->
+    <nav id="navegacion" class="barra-nav">
+        <div class="logo-nav">FA<span class="punto-acento">.</span>dev</div>
+        <ul class="enlaces-nav">
+            <li><a href="#inicio" class="enlace-nav" data-texto="Inicio">Inicio</a></li>
+            <li><a href="#habilidades" class="enlace-nav" data-texto="Habilidades">Habilidades</a></li>
+            <li><a href="#proyectos" class="enlace-nav" data-texto="Proyectos">Proyectos</a></li>
+            <li><a href="#contacto" class="enlace-nav" data-texto="Contacto">Contacto</a></li>
+        </ul>
+        <div class="indicador-scroll">
+            <div class="barra-progreso-nav"></div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="seccion-hero">
+        <div class="contenido-hero">
+            <div class="etiqueta-estado">
+                <span class="punto-verde"></span>
+                Disponible para proyectos
+            </div>
+            <h1 class="titulo-hero">
+                <span class="linea-nombre">Francisco</span>
+                <span class="linea-apellido">Asensio</span>
+            </h1>
+            <p class="subtitulo-hero">Desarrollador <span class="texto-acento">Full-Stack</span> especializado en experiencias de alto rendimiento</p>
+            <div class="acciones-hero">
+                <a href="#proyectos" class="boton-primario">
+                    <span>Ver Proyectos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contacto" class="boton-outline">Hablemos</a>
+            </div>
+            <div class="estadisticas-hero">
+                <div class="stat">
+                    <span class="stat-numero">3+</span>
+                    <span class="stat-etiqueta">Años exp.</span>
+                </div>
+                <div class="divisor-stat"></div>
+                <div class="stat">
+                    <span class="stat-numero">10+</span>
+                    <span class="stat-etiqueta">Proyectos</span>
+                </div>
+                <div class="divisor-stat"></div>
+                <div class="stat">
+                    <span class="stat-numero">5+</span>
+                    <span class="stat-etiqueta">Tecnologías</span>
+                </div>
+            </div>
+        </div>
+        <div class="decoracion-hero">
+            <div class="anillo anillo-1"></div>
+            <div class="anillo anillo-2"></div>
+            <div class="anillo anillo-3"></div>
+            <div class="orbe-gradiente"></div>
+        </div>
+        <div class="flecha-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="seccion-general">
+        <div class="contenedor-seccion">
+            <div class="cabecera-seccion">
+                <span class="etiqueta-seccion">Stack tecnológico</span>
+                <h2 class="titulo-seccion">Mis <span class="texto-acento">Habilidades</span></h2>
+                <p class="descripcion-seccion">Tecnologías que domino para construir productos robustos y escalables</p>
+            </div>
+
+            <div class="rejilla-habilidades">
+
+                <!-- Frontend -->
+                <div class="grupo-habilidad animado" data-delay="0">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-code"></i></div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/html.png" alt="HTML5" class="logo-skill"><span class="nombre-tech">HTML5</span></div>
+                        <div class="tecnologia"><img src="img/skills/css.png" alt="CSS3" class="logo-skill"><span class="nombre-tech">CSS3</span></div>
+                        <div class="tecnologia"><img src="img/skills/javascript.png" alt="JavaScript" class="logo-skill"><span class="nombre-tech">JavaScript</span></div>
+                        <div class="tecnologia"><img src="img/skills/typescript.png" alt="TypeScript" class="logo-skill"><span class="nombre-tech">TypeScript</span></div>
+                        <div class="tecnologia"><img src="img/skills/diseño.png" alt="Responsive" class="logo-skill"><span class="nombre-tech">Responsive</span></div>
+                    </div>
+                </div>
+
+                <!-- Frameworks UI -->
+                <div class="grupo-habilidad animado" data-delay="100">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-layer-group"></i></div>
+                        <h3>Frameworks UI</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/react.png" alt="React" class="logo-skill"><span class="nombre-tech">React</span></div>
+                        <div class="tecnologia"><img src="img/skills/angular.png" alt="Angular" class="logo-skill"><span class="nombre-tech">Angular</span></div>
+                        <div class="tecnologia"><img src="img/skills/vuejs.png" alt="Vue.js" class="logo-skill"><span class="nombre-tech">Vue.js</span></div>
+                    </div>
+                </div>
+
+                <!-- Frameworks Backend -->
+                <div class="grupo-habilidad animado" data-delay="200">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-sitemap"></i></div>
+                        <h3>Frameworks Backend</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/laravel.png" alt="Laravel" class="logo-skill"><span class="nombre-tech">Laravel</span></div>
+                        <div class="tecnologia"><img src="img/skills/bootstrap.png" alt="Bootstrap" class="logo-skill"><span class="nombre-tech">Bootstrap 5</span></div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="grupo-habilidad animado" data-delay="0">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/python.png" alt="Python" class="logo-skill"><span class="nombre-tech">Python</span></div>
+                        <div class="tecnologia"><img src="img/skills/php.png" alt="PHP" class="logo-skill"><span class="nombre-tech">PHP</span></div>
+                        <div class="tecnologia"><img src="img/skills/java.png" alt="Java" class="logo-skill"><span class="nombre-tech">Java</span></div>
+                        <div class="tecnologia"><img src="img/skills/apirest.png" alt="APIs REST" class="logo-skill"><span class="nombre-tech">APIs REST</span></div>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="grupo-habilidad animado" data-delay="100">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-database"></i></div>
+                        <h3>Bases de Datos</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/mysql.png" alt="MySQL" class="logo-skill"><span class="nombre-tech">MySQL</span></div>
+                        <div class="tecnologia"><img src="img/skills/mariadb.png" alt="MariaDB" class="logo-skill"><span class="nombre-tech">MariaDB</span></div>
+                        <div class="tecnologia"><img src="img/skills/sql.png" alt="SQL" class="logo-skill"><span class="nombre-tech">SQL</span></div>
+                    </div>
+                </div>
+
+                <!-- Herramientas / DevOps -->
+                <div class="grupo-habilidad animado" data-delay="200">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-tools"></i></div>
+                        <h3>Herramientas / DevOps</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/git.png" alt="Git" class="logo-skill"><span class="nombre-tech">Git/GitHub</span></div>
+                        <div class="tecnologia"><img src="img/skills/docker.png" alt="Docker" class="logo-skill"><span class="nombre-tech">Docker</span></div>
+                        <div class="tecnologia"><img src="img/skills/apache.png" alt="Apache" class="logo-skill"><span class="nombre-tech">Apache</span></div>
+                        <div class="tecnologia"><img src="img/skills/nginx.png" alt="Nginx" class="logo-skill"><span class="nombre-tech">Nginx</span></div>
+                        <div class="tecnologia"><img src="img/skills/composer.png" alt="Composer" class="logo-skill"><span class="nombre-tech">Composer</span></div>
+                        <div class="tecnologia"><img src="img/skills/phpunit.png" alt="PHPUnit" class="logo-skill"><span class="nombre-tech">PHPUnit</span></div>
+                    </div>
+                </div>
+
+                <!-- Metodología -->
+                <div class="grupo-habilidad animado" data-delay="0">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-tasks"></i></div>
+                        <h3>Metodología</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/scrum.png" alt="Scrum" class="logo-skill"><span class="nombre-tech">Scrum</span></div>
+                        <div class="tecnologia"><img src="img/skills/trello.png" alt="Trello" class="logo-skill"><span class="nombre-tech">Trello</span></div>
+                    </div>
+                </div>
+
+                <!-- ERP -->
+                <div class="grupo-habilidad animado" data-delay="100">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-briefcase"></i></div>
+                        <h3>ERP</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/odoo.png" alt="Odoo" class="logo-skill"><span class="nombre-tech">Odoo</span></div>
+                    </div>
+                </div>
+
+                <!-- CMS -->
+                <div class="grupo-habilidad animado" data-delay="200">
+                    <div class="grupo-encabezado">
+                        <div class="icono-grupo"><i class="fas fa-globe"></i></div>
+                        <h3>CMS</h3>
+                    </div>
+                    <div class="lista-tecnologias">
+                        <div class="tecnologia"><img src="img/skills/wordpress.png" alt="WordPress" class="logo-skill"><span class="nombre-tech">WordPress</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion-general seccion-oscura">
+        <div class="contenedor-seccion">
+            <div class="cabecera-seccion">
+                <span class="etiqueta-seccion">Trabajo reciente</span>
+                <h2 class="titulo-seccion">Proyectos <span class="texto-acento">Destacados</span></h2>
+            </div>
+
+            <div class="rejilla-proyectos">
+                <div class="tarjeta-proyecto animado" data-delay="0">
+                    <div class="imagen-proyecto">
+                        <img src="img/projects/calculadoraPython.png" alt="Calculadora Python" class="foto-proyecto">
+                        <div class="overlay-proyecto">
+                            <a href="https://github.com/fran-asensio/CalculadoraPython.git" target="_blank" class="boton-repo">
+                                <i class="fab fa-github"></i> Ver Código
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-proyecto">
+                        <div class="etiquetas-proyecto">
+                            <span class="etiqueta-tech">Python</span>
+                            <span class="etiqueta-tech">Tkinter</span>
+                            <span class="etiqueta-tech">GUI</span>
+                        </div>
+                        <h3>Calculadora en Python</h3>
+                        <p>Aplicación de calculadora con interfaz gráfica moderna usando Tkinter. Implementa operaciones matemáticas básicas con diseño intuitivo y eficiente.</p>
+                        <a href="https://github.com/fran-asensio/CalculadoraPython.git" target="_blank" class="enlace-github-card">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/fran-asensio</span>
+                            <i class="fas fa-external-link-alt icono-externo"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-proyecto animado" data-delay="0">
+            <div class="imagen-proyecto">
+                <img src="img/projects/pedidosJava.png" alt="Gestion de Pedidos" class="foto-proyecto">
+                <div class="overlay-proyecto">
+                    <a href="https://github.com/fran-asensio/GestionPedidos.git" target="_blank" class="boton-repo">
+                        <i class="fab fa-github"></i> Ver Código
+                    </a>
+                </div>
+            </div>
+            <div class="info-proyecto">
+                <div class="etiquetas-proyecto">
+                    <span class="etiqueta-tech">Java</span>
+                    <span class="etiqueta-tech">JUnit</span>
+                </div>
+                <h3>Gestión de Pedidos con Java</h3>
+                <p>Gestor de pedidos en Java con lógica de inventario inteligente, con estructura de Programación Orientada a Objetos (POO) clásica.</p>
+                <a href="URL_DEL_REPOSITORIO" target="_blank" class="enlace-github-card">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/fran-asensio</span>
+                    <i class="fas fa-external-link-alt icono-externo"></i>
+                </a>
+            </div>
+        </div>
+                <!-- Tarjeta "Próximamente" -->
+                <div class="tarjeta-proyecto tarjeta-pronto animado" data-delay="150">
+                    <div class="contenido-pronto">
+                        <div class="icono-pronto"><i class="fas fa-rocket"></i></div>
+                        <h3>Próximo Proyecto</h3>
+                        <p>Algo nuevo está en camino...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion-general">
+        <div class="contenedor-seccion">
+            <div class="cabecera-seccion">
+                <span class="etiqueta-seccion">¿Trabajamos juntos?</span>
+                <h2 class="titulo-seccion">Ponte en <span class="texto-acento">Contacto</span></h2>
+                <p class="descripcion-seccion">¿Tienes un proyecto en mente? Escríbeme y lo hacemos realidad.</p>
+            </div>
+
+            <div class="contenedor-contacto">
+                <div class="info-contacto animado" data-delay="0">
+                    <div class="dato-contacto">
+                        <div class="icono-dato"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span class="etiqueta-dato">Email</span>
+                            <span class="valor-dato"><a href="mailto:fasensio.dev@gmail.com">fasensio.dev@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="dato-contacto">
+                        <div class="icono-dato"><i class="fab fa-github"></i></div>
+                        <div>
+                            <span class="etiqueta-dato">GitHub</span>
+                            <span class="valor-dato"><a href="https://github.com/fran-asensio"></a>github.com/fran-asensio</span>
+                        </div>
+                    </div>
+                    <div class="dato-contacto">
+                        <div class="icono-dato"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <span class="etiqueta-dato">Ubicación</span>
+                            <span class="valor-dato">España 🇪🇸</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" method="POST" class="formulario-contacto animado" id="formulario-principal" data-delay="150">
+                    <div class="campo-formulario">
+                        <input type="text" name="nombre" id="campo-nombre" placeholder=" " required>
+                        <label for="campo-nombre">Tu nombre</label>
+                    </div>
+                    <div class="campo-formulario">
+                        <input type="email" name="email" id="campo-email" placeholder=" " required>
+                        <label for="campo-email">Tu email</label>
+                    </div>
+                    <div class="campo-formulario">
+                        <input type="tel" name="tel" id="campo-tel" placeholder=" " required>
+                        <label for="campo-tel">Tu teléfono</label>
+                    </div>
+                    <div class="campo-formulario campo-textarea">
+                        <textarea name="mensaje" id="campo-mensaje" placeholder=" " required rows="4"></textarea>
+                        <label for="campo-mensaje">Escribe algo...</label>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lcl7oYsAAAAABNibfZv41IpAI-qt9czFHRJcUlx"></div>
+                    <button type="submit" class="boton-enviar">
+                        <span class="texto-boton">Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane icono-enviar"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Francisco Asensio | Full Stack Developer</p>
+    </footer>
+</body>
+</html>
